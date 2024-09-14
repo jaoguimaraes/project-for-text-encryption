@@ -1,0 +1,20 @@
+{
+  "name": "project-for-text-encryption",
+  "version": "1.0.0",
+  "description": "The expectation of this project is to receive a file, encrypt its content and return it in the same format, but fully encrypted.",
+  "main": "index.js",
+  "scripts": {
+    "dev":"tsc && node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.5.5",
+    "readline-sync": "^1.4.10",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8"
+  }
+}
