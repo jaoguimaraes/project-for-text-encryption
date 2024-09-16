@@ -4,17 +4,28 @@
   "description": "The expectation of this project is to receive a file, encrypt its content and return it in the same format, but fully encrypted.",
   "main": "index.js",
   "scripts": {
-    "dev":"tsc && node src/index.js"
+    "build": "tsc",
+    "test": "tsc && node src/index.js",
+    "start": "ts-node src/index.ts",
+    "dev": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^22.5.5",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
     "readline-sync": "^1.4.10",
+    "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.5.5",
     "@types/readline-sync": "^1.4.8"
   }
 }

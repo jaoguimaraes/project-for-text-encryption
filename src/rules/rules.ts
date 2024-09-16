@@ -11,10 +11,10 @@ export function encrypt(text: string): string {
 export function decrypt(text: string): string {
     return text.replace(/[a-zA-Z]/g, (char) => {
         let code = char.charCodeAt(0);
-        if((code < 64 && code > 90) || (code < 96 && code >= 122)) {
+        if ((code > 65 && code <= 90) || (code > 97 && code <= 122)) {
             return String.fromCharCode(code - 1);
-        } else if (code === 64) return 'Z';
-        else if (code === 96) return 'z';
+        } else if (code === 65) return 'Z';
+        else if (code === 97) return 'z';
         return char;
     });
 }
